@@ -20,7 +20,7 @@ authors:
     affiliation: 1
 affiliations:
   - name: Karl Franzens University, Austria
-   index: 1
+  - index: 1
 date: 1 August 2023
 bibliography: paper.bib
 ---
