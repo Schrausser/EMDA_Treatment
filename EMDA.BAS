@@ -8,14 +8,14 @@ REM
 
 REM ------------------------- Startdefinition ---------------------------
 
-zwe = 0: dur = 20   ' ** Anzahl der DurchgÑnge.
+zwe = 0: dur = 20   ' ** Anzahl der Durchg√§nge.
 neu:
 CLS : SCREEN 8: COLOR 8, 7: GOSUB tit
 taf1 = 8: taf2 = 15: ta = 0
 DO
   IF INKEY$ = "e" THEN GOSUB dru: SOUND 200, 5: SLEEP (2): gru = 1: GOTO we
   IF INKEY$ = "a" THEN ta = 200: GOSUB dru: SOUND 150, 5: SLEEP (2): gru = 2: GOTO we
-  IF INKEY$ = "Ñ" THEN ta = 400: GOSUB dru: SOUND 100, 5: SLEEP (2): COLOR 15, 0: CLS : END
+  IF INKEY$ = "‚Äû" THEN ta = 400: GOSUB dru: SOUND 100, 5: SLEEP (2): COLOR 15, 0: CLS : END
 LOOP
 
 we:
@@ -65,7 +65,7 @@ gru = 1
 
 en:
 GOSUB schl: GOSUB ende
-IF xx$ = "Ñ" THEN CLS : END
+IF xx$ = "x" THEN CLS : END
 IF xx$ = "m" THEN GOTO neu
 
 GOTO emd1
@@ -78,7 +78,7 @@ schl:
 SLEEP (2)
 RETURN
 
-REM ------------------------------ StartmenÅ ------------------------------
+REM ------------------------------ Startmen√º ------------------------------
 
 tit:
 LINE (80, 120)-(570, 40), 8, B
@@ -98,7 +98,7 @@ FOR i% = 1 TO 3
 NEXT
 LOCATE 20, 13: PRINT "EMD (E)"
 LOCATE 20, 38: PRINT "ABL (A)"
-LOCATE 20, 62: PRINT "Ende (é)"
+LOCATE 20, 62: PRINT "Ende (X)"
 RETURN
 
 REM ------------------------------ Demomessage ----------------------------
@@ -106,7 +106,7 @@ REM ------------------------------ Demomessage ----------------------------
 ber:
 LOCATE 10, 25
 LINE (150, 110)-(500, 50), 6, B
-PRINT " D E M O - beliebige Taste drÅcken "
+PRINT " D E M O - beliebige Taste dr¬Åcken "
 SLEEP: SLEEP (1)
 CLS : SLEEP (1)
 RETURN
@@ -117,12 +117,12 @@ star:
 COLOR 4, 0
 LOCATE 10, 24
 LINE (150, 110)-(500, 50), 4, B
-PRINT "S T A R T - beliebige Taste DrÅcken "
+PRINT "S T A R T - beliebige Taste Dr¬Åcken "
 SLEEP: SLEEP (1)
 CLS : SLEEP (2)
 RETURN
 
-REM --------------------------------- EndmenÅ -----------------------------
+REM --------------------------------- Endmen√º -----------------------------
 
 ende:
 COLOR 10, 0
@@ -136,7 +136,7 @@ SLEEP
 IF gru = 1 THEN PRINT "Jetzt kommt    E M D" ELSE PRINT "Jetzt kommt    A B L a"
 COLOR 15, 0
 PRINT
-INPUT "Weiter(W)  MenÅ(M)  Ende(é)"; xx$
+INPUT "Weiter(W)  Men√º(M)  Ende(X)"; xx$
 RETURN
 
 REM --------------------------------- EMD Demo ----------------------------
