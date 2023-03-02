@@ -60,11 +60,22 @@ A horizontal *moving* bar was rendered on a monitor to generate eye movements im
 
 ![figure.\label{Figure 1: `EMDA` Treatment 1, lateral eye movement.}](figure1.jpg)
 
-The moving bar changed color from green to blue with a probability of $p_1=0.125$ per pass. Each blue bar was to be reported as 'blue'. One run from left to right and back lasted for $t_1=3$ seconds each of $n_1=60$ runs, resulting in a $t_1=3$ minute treatment duration and $n=60×0.125=7.5$ expected events $e_1$. Main loop for EMDA treatment 1 rendering:
+The moving bar changed color from green to blue with a probability of $p_1=0.125$ per pass. Each blue bar was to be reported as 'blue'. One run from left to right and back lasted for $t_1=3$ seconds each of $n_1=60$ runs, resulting in a $t_1=3$ minute treatment duration and $n=60×0.125=7.5$ expected events $e_1$. 
+Calculation of pseudo random variable *g* for the color representation of the bar:
+~~~
+FOR s% = 1 TO dur
+    aa = 1: bb = 640: fa1 = 10: x1 = 0: x2 = 30: st = 1
+    RANDOMIZE zf
+    zfa = RND(2)
+    IF s% > 1 AND zfa >= .87 THEN g = -1 ELSE g = 0 
+    GOSUB emd:
+NEXT
+~~~
+Main loop for treatment 1 rendering. *STEP* implies velocity of moving bar depending on the hardware:
 ~~~
 emd:
     FOR r% = 1 TO 2
-        FOR i% = aa TO bb STEP 7 * st    ' **  speed of bar **
+        FOR i% = aa TO bb STEP 7 * st    
             LINE (i% - x1, 150)-(i% + x2, 40), fa1 - g, BF
             LINE (i% - x2, 150)-(i% + x1, 40), 0, BF
         NEXT
@@ -75,7 +86,18 @@ RETURN
 In order to fix the central object, four *non-moving* rectangles were rendered on the screen \autoref{fig. 2}. These rectangles appeared either blue or green every $s_2=3$ seconds ($p=0.5$). Once all four rectangles displayed the same color ($p_2=2×0.5^4=0.125$), subjects had to react ('blue' or 'green'). Duration of the procedure again was $t_2=3$ minutes with $n=7.5$ expected events $e_2$. 
 
 ![figure.\label{Figure 2: `EMDA` Treatment 2, fix target.}](figure2.jpg)
-Main function for EMDA treatment 2 rendering:
+
+Function to calculate pseudo-random variables *g* to display rectangles:
+~~~
+RESTORE
+  FOR i = 1 TO 4
+      RANDOMIZE zf
+      zfa = RND(2)
+      IF zfa < .5 THEN g = 1 ELSE g = 0
+      GOSUB abla
+  NEXT
+~~~
+Main function via efficient *DATA READ* definition of coordinate points for treatment 2 rendering:
 ~~~
 abla:
       READ x, y, x1, y1
@@ -84,7 +106,7 @@ abla:
 RETURN
 ~~~
 # Software
-`EMDA` is implemented in QBasic for Microsoft DOS 6.0 or later to perform treatment procedures and timing. Further programs `EMDapk` [@EMDapk] for handheld Android operation systems versions 4.0 or later and `EMDscr` [@EMDscr] as screensaver or executable for Microsoft Windows platforms are created. Both applications performing treatment part 1 described above, that is the moving bar in green color to induce the EMDR, this with selectabe speed useable in the field. For related works see e.g. @Alulema:2014, @Goga:2020 or Shakeel:2022. Early commercial approaches give e.g. @SAVYNTECH:2019.
+`EMDA` is implemented in QBasic for Microsoft DOS 6.0 to perform treatment procedures and timing. Further programs `EMDapk` [@EMDapk] for handheld Android operation systems versions 4.0 or later and `EMDscr` [@EMDscr] as screensaver or executable for Windows platforms are created. Both applications performing treatment part 1 described above, that is the moving bar to induce the EMDR, this with selectabe speed useable in the field. For related works see e.g. @Alulema:2014, @Goga:2020 or Shakeel:2022. Early commercial approaches give e.g. @SAVYNTECH:2019.
 
 # Conclusion
 Considering the proven and broadly confirmed positive effects of EMDR, `EMDA` represents a useful basis for further development and adaptation, both in the experimental field and in the area of application. This applies for the latter in particular to the extractions `EMDapk` and `EMDscr`, which are not only useful for a quick and comfortable treatment or therapeutic application but may be even more appropriate for further development and integration of the source-code. The simple structure of the syntax as well as the generally easy to understand programming language should be of not inconsiderable advantage for uncomplicated and broad elaboration.
