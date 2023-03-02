@@ -83,7 +83,7 @@ emd:
     NEXT
 RETURN
 ~~~
-In order to fix the central object, four *non-moving* rectangles were rendered on the screen \autoref{fig. 2}. These rectangles appeared either blue or green every $s_2=3$ seconds ($p=0.5$). Once all four rectangles displayed the same color ($p_2=2×0.5^4=0.125$), subjects had to react ('blue' or 'green'). Duration of the procedure again was $t_2=3$ minutes with $n=7.5$ expected events $e_2$. 
+In order to fix the central object, four *non-moving* rectangles were rendered on the screen \autoref{fig. 2}. These rectangles appeared either blue or green every $t_2=3$ seconds ($p=0.5$). Once all four rectangles displayed the same color ($p_2=2×0.5^4=0.125$), subjects had to react ('blue' or 'green'). Duration of the procedure again was $t_2=3$ minutes with $n=7.5$ expected events $e_2$. 
 
 ![figure.\label{Figure 2: `EMDA` Treatment 2, fix target.}](figure2.jpg)
 
