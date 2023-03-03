@@ -41,7 +41,7 @@ FOR s% = 1 TO dur
     RANDOMIZE zf
     zfa = RND(2)
     IF s% > 1 AND zfa >= .87 THEN g = -1 ELSE g = 0 ' ** p(blau) = 0.13
-    GOSUB emd:
+    GOSUB emd
 NEXT
 gru = 2
 CLS
