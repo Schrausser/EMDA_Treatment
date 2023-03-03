@@ -60,7 +60,7 @@ A horizontal *moving* bar was rendered on a monitor to generate eye movements im
 
 ![figure.\label{Figure 1: `EMDA` Treatment 1, lateral eye movement.}](figure1.jpg)
 
-The moving bar changed color from green to blue with a probability of $p_1=0.125$ per pass. Each blue bar was to be reported as 'blue'. One run from left to right and back lasted for $t_1=3$ seconds each of $n_1=60$ runs, resulting in a $t_1=3$ minute treatment duration and $n=60×0.125=7.5$ expected events $e_1$. 
+The moving bar changed color from green to blue with a probability of $p_1=0.125$ per pass. Each blue bar was to be reported as *blue*. One run from left to right and back lasted for $t_1=3$ seconds each of $n_1=60$ runs, resulting in a $t_1=3$ minute treatment duration and $n=60×0.125=7.5$ expected events $e_1$. 
 Calculation of pseudo random variable *g* for the color representation of the bar:
 ~~~
 FOR s% = 1 TO dur
@@ -83,7 +83,7 @@ emd:
     NEXT
 RETURN
 ~~~
-In order to fix the central object, four *non-moving* rectangles were rendered on the screen \autoref{fig. 2}. These rectangles appeared either blue or green every $t_2=3$ seconds ($p=0.5$). Once all four rectangles displayed the same color ($p_2=2×0.5^4=0.125$), subjects had to react ('blue' or 'green'). Duration of the procedure again was $t_2=3$ minutes with $n=7.5$ expected events $e_2$. 
+In order to fix the central object, four *non-moving* rectangles were rendered on the screen \autoref{fig. 2}. These rectangles appeared either blue or green every $t_2=3$ seconds ($p=0.5$). Once all four rectangles displayed the same color ($p_2=2×0.5^4=0.125$), subjects had to react (*blue* or *green*). Duration of the procedure again was $t_2=3$ minutes with $n=7.5$ expected events $e_2$. 
 
 ![figure.\label{Figure 2: `EMDA` Treatment 2, fix target.}](figure2.jpg)
 
