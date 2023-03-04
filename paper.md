@@ -35,7 +35,7 @@ affiliations:
   - index: 2
   - name: Dietmar G. Schrausser, Independent Researcher, Austria
   - index: 3
-date: 1 August 2023
+date: 2023
 bibliography: paper.bib
 ---
 
