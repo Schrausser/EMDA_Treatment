@@ -1,7 +1,7 @@
 REM ---------------------------------------------------------------------
 REM                       EYE MOVEMENT DESENSITIZATION
 REM                     _________________________________
-REM                      Programm von Dietmar Schrausser
+REM                     Programm von Dietmar G. Schrausser
 REM                                 (c) 1994
 REM ---------------------------------------------------------------------
 REM
@@ -86,7 +86,7 @@ LINE (80, 120)-(570, 120), 15: LINE (570, 120)-(570, 40), 15
 LINE (120, 56)-(125, 50), 2, BF: LINE (110, 64)-(115, 58), 2, BF
 LINE (130, 64)-(135, 58), 1, BF: LINE (120, 72)-(125, 66), 1, BF
 LOCATE 10, 19
-PRINT "  E M D - Generator   by D.Schrausser (c)1994"
+PRINT "  E M D - Generator   by D. G. Schrausser (c)1994"
 LOCATE 11, 18
 PRINT " ______________________________________________"
 IF zwe = 0 THEN GOSUB melo
@@ -106,7 +106,7 @@ REM ------------------------------ Demomessage ----------------------------
 ber:
 LOCATE 10, 25
 LINE (150, 110)-(500, 50), 6, B
-PRINT " D E M O - beliebige Taste drcken "
+PRINT " D E M O - beliebige Taste drücken "
 SLEEP: SLEEP (1)
 CLS : SLEEP (1)
 RETURN
@@ -117,7 +117,7 @@ star:
 COLOR 4, 0
 LOCATE 10, 24
 LINE (150, 110)-(500, 50), 4, B
-PRINT "S T A R T - beliebige Taste Drcken "
+PRINT "S T A R T - beliebige Taste drücken "
 SLEEP: SLEEP (1)
 CLS : SLEEP (2)
 RETURN
