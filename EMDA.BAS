@@ -15,7 +15,7 @@ taf1 = 8: taf2 = 15: ta = 0
 DO
   IF INKEY$ = "e" THEN GOSUB dru: SOUND 200, 5: SLEEP (2): gru = 1: GOTO we
   IF INKEY$ = "a" THEN ta = 200: GOSUB dru: SOUND 150, 5: SLEEP (2): gru = 2: GOTO we
-  IF INKEY$ = "„" THEN ta = 400: GOSUB dru: SOUND 100, 5: SLEEP (2): COLOR 15, 0: CLS : END
+  IF INKEY$ = "x" THEN ta = 400: GOSUB dru: SOUND 100, 5: SLEEP (2): COLOR 15, 0: CLS : END
 LOOP
 
 we:
