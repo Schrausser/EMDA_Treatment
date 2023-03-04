@@ -87,7 +87,7 @@ In order to fix the central object, four *non-moving* rectangles were rendered o
 
 ![figure.\label{Figure 2: `EMDA` Treatment 2, fix target.}](figure2.jpg)
 
-Function to calculate pseudo-random variables *g* to display rectangles:
+Function to calculate pseudo-random variable *g* to display rectangles:
 ~~~
 RESTORE
   FOR i = 1 TO 4
