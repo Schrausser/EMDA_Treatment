@@ -24,10 +24,6 @@ authors:
   - name: Jürgen Plechinger
     equal-contrib: true
     affiliation: 3
-  - name: Günter Schulter
-    orcid: 0000-0002-4581-8143
-    equal-contrib: true
-    affiliation: 2
 affiliations:
   - name: Independent Researcher, Austria
   - index: 1
