@@ -4,6 +4,6 @@ MS QBasic source to demonstrate the affect-reducing effect of the clinical metho
 
 ### References
 
-Schrausser, D. G., Draxler, J., & Plechinger J. (1994). EMD - Eye Movement Desensitization. *Manuskript*. Institut für Psychologie, Karl Franzens Universität, Graz, Austria. http://doi.org/10.13140/RG.2.2.28498.02247/2
+Schrausser, D. G., Draxler, J., & Plechinger, J. (1994). EMD - Eye Movement Desensitization. *Manuskript*. Institut für Psychologie, Karl Franzens Universität, Graz, Austria. http://doi.org/10.13140/RG.2.2.28498.02247/2
  
-Schrausser, D. G., Draxler, J., & Plechinger J. (2022). EMD - Eye Movement Desensitization. *Manuscript*. (English translation). Institute of Psychology, Karl Franzens University, Graz, Austria. http://doi.org/10.13140/RG.2.2.13968.38404
+Schrausser, D. G., Draxler, J., & Plechinger, J. (2022). EMD - Eye Movement Desensitization. *Manuscript*. (English translation). Institute of Psychology, Karl Franzens University, Graz, Austria. http://doi.org/10.13140/RG.2.2.13968.38404
