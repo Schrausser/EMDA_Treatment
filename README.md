@@ -1,6 +1,10 @@
 ## EMDA_Treatment
 
-MS QBasic source to demonstrate the affect-reducing effect of the clinical method lateral eye movement (EMDR) as implemented by Schrausser et al. (1994, 2022, respectively).
+MS QBasic source to demonstrate the affect-reducing effect of the clinical method *lateral eye movement* (EMDR) as implemented by Schrausser et al. (1994, 2022, respectively).
+
+![figure.\label{pic1}](figure1.jpg)
+
+![figure.\label{pic2}](figure2.jpg)
 
 ### References
 
